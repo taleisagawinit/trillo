@@ -7,7 +7,7 @@ import AvatarIcon from './components/avatar-icon/AvatarIcon';
 function App() {
   return (
     <div>
-      <AvatarIcon />
+      <AvatarIcon alt={"avatar icon"} img={"/img/user.jpg"} name={"Jonas"} />
     </div>
   );
 }

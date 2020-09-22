@@ -1,6 +1,23 @@
 .avatar-icon {
-  height: 3rem;
-  width: 3rem;
-  background-color: blue;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__img-box {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
 }
