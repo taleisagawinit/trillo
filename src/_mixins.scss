@@ -1,0 +1,52 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+MEDIA QUERIES
+[0 - 600] => NORMAL STYLES APPLY
+600 - 900 => TABLET PORTRAIT
+900 - 1200 => TABLET LANDSCAPE
+1200 - 1800 => LAPTOP
+1800+ => DESKTOP
+
+$BREAKPOINT CHOICES:
+- tablet-p
+- tablet-l
+- laptop
+- desktop
+
+ORDER TO ADD RESPONSIVENESS
+Base + Typography => General Layout + Grid => Page Layout => Components
+
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet-p {
+    @media only screen and (min-width: 56.25em) { @content }; // 900px
+  }
+  @if $breakpoint == tablet-l {
+    @media only screen and (min-width: 75em) { @content };  // 1200px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 112.5em) { @content }; // 1800px
+  }
+}
