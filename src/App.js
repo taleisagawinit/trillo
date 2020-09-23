@@ -1,13 +1,15 @@
 import React from 'react';
 import './app.scss';
-// import Navigation from './layout/navigation/Navigation';
-// import Header from './layout/header/Header';
+import Navigation from './layout/navigation/Navigation';
+import Header from './layout/header/Header';
 import ImageGallery from './components/image-gallery/ImageGallery';
 
 
 function App() {
   return (
     <div>
+      <Header />
+      <Navigation />
       <ImageGallery
         alt1="img 1"
         img1="/img/hotel-1.jpg"
