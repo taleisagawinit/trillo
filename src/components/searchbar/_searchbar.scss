@@ -1,18 +1,34 @@
 .searchbox {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: $color-grey-light-2;
+  border-radius: 10px;
+  overflow: hidden;
 
-  &__input, &__search-button {
-    
+  &__input, &__submit-button {
+    padding: 1rem;
+    border: none;
+    background-color: $color-grey-light-2;
+
     &, &:focus {
       outline: none;
-      border: none;
-      background-color: $color-grey-light-2;
+      caret-color: $color-primary;
     }
   }
 
   &__input {
-    flex-grow: 1;
     padding: 1rem;
+    transition: .5s;
+    &:focus {
+      flex-grow: 1;
+    }
   }
+
+  &__submit-button {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
 }

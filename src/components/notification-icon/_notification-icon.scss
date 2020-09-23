@@ -1,13 +1,10 @@
-@import "../../variables";
-@import "../../mixins";
-
 .notification-icon {
   color: $color-grey-dark-2;
   position: relative;
   display: inline-block;
 
   &__icon {
-    font-size: $notification-icon-size;
+    font-size: 2.5rem;
   }
 
   &__number-box {
@@ -15,8 +12,8 @@
     display: inline-block;
     bottom: 0;
     right: -.5rem;
-    width: $number-box-size;
-    height: $number-box-size;
+    width: 1.75rem;
+    height: 1.75rem;
     background-color: $color-primary;
     border-radius: 50%;
     display: flex;

@@ -1,13 +1,11 @@
 import React from 'react';
 import './app.scss';
-import Searchbar from './components/searchbar/Searchbar';
-// import { BiBookmark, BiConversation } from "react-icons/bi";
-
+import Header from './layout/header/Header';
 
 function App() {
   return (
     <div>
-      <Searchbar value="" />
+      <Header />
     </div>
   );
 }
