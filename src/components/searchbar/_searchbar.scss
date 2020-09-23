@@ -1,0 +1,18 @@
+.searchbox {
+  display: flex;
+  background-color: $color-grey-light-2;
+
+  &__input, &__search-button {
+    
+    &, &:focus {
+      outline: none;
+      border: none;
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+}
