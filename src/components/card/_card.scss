@@ -1,0 +1,35 @@
+.card {
+  font-size: 1.4rem;
+  background-color: $color-white;
+
+  & div {
+    padding: 2.5rem;
+    border-bottom: 1px solid $color-grey-light-2;
+  }
+
+  &__info--2 {
+    margin-top: 2rem;
+  }
+
+
+  &__perks {
+    list-style-type: none;
+    padding-left: none;
+
+    & li {
+      display: flex;
+      align-items: center;
+    }
+
+    & li::before { 
+      content: '\203A'; 
+      color: $color-primary;
+      font-weight: 300;
+      font-size: 2rem;
+      margin-right: 1rem; 
+    }
+  }
+
+  
+}
+

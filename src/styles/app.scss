@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+@import "./base";
+
+// components
+@import "../components/avatar-icon/avatar-icon";
+@import "../components/logo-icon/logo-icon";
+@import "../components/notification-icon/notification-icon";
+@import "../components/searchbar/searchbar";
+@import "../components/nav-item/nav-item";
+@import "../components/image-gallery/image-gallery";
+@import "../components/info-title/info-title";
+@import "../components/card/card";
+
+// layout
+@import "../layout/header/header";
+@import "../layout/navigation/navigation";
+@import '../layout/main/main';
