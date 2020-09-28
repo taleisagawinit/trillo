@@ -1,4 +1,5 @@
 import React from 'react';
+import AvatarIcon from '../avatar-icon/AvatarIcon';
 
 export default function(props) {
   return (
@@ -14,8 +15,14 @@ export default function(props) {
           )) : null }
         </ul>
       </div>
-      <div className="card__reccommend">
-
+      <div className="card__recommend-box">
+        <p className="card__users-info">Lucy and 3 other friends recommend this hotel</p>
+        <div className="card__users">
+            <AvatarIcon className="card__user" img={"/img/user-3.jpg"} alt={"user img"} />
+            <AvatarIcon className="card__user" img={"/img/user-4.jpg"} alt={"user img"} />
+            <AvatarIcon className="card__user" img={"/img/user-5.jpg"} alt={"user img"} />
+            <AvatarIcon className="card__user" img={"/img/user-6.jpg"} alt={"user img"} />
+        </div>
       </div>
     </div>
   )

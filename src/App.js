@@ -27,6 +27,7 @@ function App() {
        numRating={8.6}
        votes={429}
         />
+      
       {/* content - main */}
       <Main />
       {/* footer */}
