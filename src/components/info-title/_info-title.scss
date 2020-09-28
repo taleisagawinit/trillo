@@ -11,7 +11,8 @@
     text-transform: uppercase;
     font-weight: 300;
     color: $color-grey-dark-1;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
   }
 
   &__star-rating {
@@ -51,7 +52,7 @@
   }
 
   &__rating {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
 

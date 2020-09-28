@@ -1,11 +1,9 @@
 .image-gallery {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  overflow-x: scroll;
+  // margin-top: 1rem;
 
 
   &__img {
-    width: 33.3333%;
+    width: 100%;
+    padding: 1rem;
   }
 }

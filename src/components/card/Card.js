@@ -16,12 +16,11 @@ export default function(props) {
         </ul>
       </div>
       <div className="card__recommend-box">
-        <p className="card__users-info">Lucy and 3 other friends recommend this hotel</p>
+        <p className="card__users-info">{props.recommend}</p>
         <div className="card__users">
-            <AvatarIcon className="card__user" img={"/img/user-3.jpg"} alt={"user img"} />
-            <AvatarIcon className="card__user" img={"/img/user-4.jpg"} alt={"user img"} />
-            <AvatarIcon className="card__user" img={"/img/user-5.jpg"} alt={"user img"} />
-            <AvatarIcon className="card__user" img={"/img/user-6.jpg"} alt={"user img"} />
+            { props.users ? props.users.map((user, i) => (
+              <AvatarIcon key={i} className="card__user" img={"/img/" + user} alt={"user img"} />
+            )) : null }
         </div>
       </div>
     </div>
