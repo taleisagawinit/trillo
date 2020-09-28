@@ -1,0 +1,27 @@
+.button {
+  &, &:active {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  &__inline {
+    color: $color-primary;
+    margin: 3rem auto;
+    border-bottom: 1px solid $color-primary;
+    
+  }
+
+  &__gradient {
+    color: $color-white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    padding: 2rem 6rem;
+    border-radius: 3rem;
+    font-weight: 400;
+    margin: 2rem auto 0 auto;
+  }
+
+}

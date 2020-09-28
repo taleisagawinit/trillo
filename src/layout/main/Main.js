@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../../components/card/Card';
 import ReviewCard from '../../components/review-card/ReviewCard';
+import Button from '../../components/button/Button';
 
 export default function() {
   const cardPerks = ['Close to the beach', 'Free airport shuttle', 'Air conditioning & heating', 'We speak all languages', 'Breakfast included', 'Free wifi', 'Pets allowed', 'Perfect for families'];
@@ -28,6 +29,10 @@ export default function() {
       rating={"9.3"}
       img={"user-2.jpg"}
        />
+      <Button
+      type={"inline"}
+      text="Show all &rarr;"
+      />
     </section>
   )
 } 

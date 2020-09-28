@@ -5,6 +5,7 @@ import Header from './layout/header/Header';
 import ImageGallery from './components/image-gallery/ImageGallery';
 import InfoTitle from './components/info-title/InfoTitle';
 import Main from './layout/main/Main';
+import Footer from './layout/footer/Footer';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
       {/* content - main */}
       <Main />
       {/* footer */}
+      <Footer
+      heading={"Good news! We have 4 free rooms for your selected dates!"}
+       />
     </div>
   );
 }

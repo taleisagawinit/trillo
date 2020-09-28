@@ -5,10 +5,6 @@
   position: relative;
   z-index: 10;
 
-  &:not(:last-child) {
-    border-bottom: 1px solid $color-grey-light-2;
-  }
-
 
   &__user {
     display: flex;
