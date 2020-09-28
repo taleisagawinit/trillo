@@ -2,7 +2,7 @@
   font-size: 1.4rem;
   background-color: $color-white;
 
-  &__info-box, &__perks-box {
+  &__box {
     padding: 2.5rem 0;
     border-bottom: 1px solid #f4f2f2;
     margin: 0 3rem;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 2rem 3rem;
+    // padding: 2rem 3rem;
   }
 
   &__users {

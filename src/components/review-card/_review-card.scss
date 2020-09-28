@@ -1,0 +1,55 @@
+.review {
+  font-size: 1.4rem;
+  margin: 0 3rem;
+  padding: 4rem 2rem 3rem 2rem;
+  position: relative;
+  z-index: 10;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-grey-light-2;
+  }
+
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+
+    &__pic {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      margin-right: 2rem;
+      // box-sizing: content-box;
+    }
+
+    &__name {
+      text-transform: uppercase;
+      color: $color-grey-dark-1;
+      margin-bottom: .5rem;
+    }
+
+    &__rating {
+      color: $color-primary;
+      font-size: 2rem;
+      flex-grow: 2;
+      text-align: right;
+      align-self: flex-end;
+    }
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    left: 0rem;
+    top: -1.5rem;
+    display: block;
+    font-size: 20rem;
+    font-family: sans-serif;
+    z-index: -1;
+    color: $color-grey-light-2;
+  }
+}

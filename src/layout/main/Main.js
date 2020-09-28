@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from '../../components/card/Card'
+import Card from '../../components/card/Card';
+import ReviewCard from '../../components/review-card/ReviewCard';
 
 export default function() {
   const cardPerks = ['Close to the beach', 'Free airport shuttle', 'Air conditioning & heating', 'We speak all languages', 'Breakfast included', 'Free wifi', 'Pets allowed', 'Perfect for families'];
@@ -12,6 +13,20 @@ export default function() {
       perks={cardPerks}
       recommend={"Lucy and 3 other friends recommend this hotel"}
       users={cardUsers}
+       />
+      <ReviewCard
+      quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
+      name={"Nick Smith"}
+      date={"Feb 23, 2017"}
+      rating={"7.8"}
+      img={"user-1.jpg"}
+       />
+      <ReviewCard
+      quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
+      name={"Mary Thomas"}
+      date={"Sept 13, 2017"}
+      rating={"9.3"}
+      img={"user-2.jpg"}
        />
     </section>
   )
