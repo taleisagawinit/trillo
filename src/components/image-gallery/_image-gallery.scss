@@ -1,9 +1,27 @@
 .image-gallery {
-  // margin-top: 1rem;
+  // width: 100%;
+
+  // &__img-box {
+  //   background-color: paleturquoise;
+  //   & .image-gallery__img {
+  //     width: 80%;
+  //     border: 1px solid palevioletred;
+  //   }
+  // }
 
 
   &__img {
-    width: 100%;
-    padding: 1rem;
+    // max-width: 900px;
+    // height: 200px;
+    // width: 100%;
+    // width: 80% !important;
+    padding: 2rem;
+
+    @include responsive(tablet-p) {
+      // padding: 2rem;
+    }
+
+
+
   }
 }
