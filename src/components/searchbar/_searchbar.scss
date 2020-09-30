@@ -3,8 +3,13 @@
   align-items: center;
   justify-content: space-around;
   background-color: $color-grey-light-2;
-  border-radius: 10px;
+  border-radius: 2rem;
   overflow: hidden;
+
+  @include responsive(laptop) {
+    justify-content: space-between;
+  }
+
 
   &__input, &__submit-button {
     padding: 1rem;
@@ -16,14 +21,22 @@
       outline: none;
       caret-color: $color-primary;
     }
+
+    @include responsive(laptop) {
+      padding: .8rem 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__input {
-    padding: 1rem;
     transition: .5s;
     &:focus {
       flex-grow: 1;
     }
+
+    @include responsive(laptop) {
+      width: 100%;
+    } 
   }
 
   &__submit-button {

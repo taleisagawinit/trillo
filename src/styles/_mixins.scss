@@ -43,10 +43,10 @@ Base + Typography => General Layout + Grid => Page Layout => Components
   @if $breakpoint == tablet-p {
     @media only screen and (min-width: 43.75em) { @content }; // 700px
   }
-  @if $breakpoint == tablet-l {
-    @media only screen and (min-width: 56.25em) { @content };  // 900px
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 62.5em) { @content }; // 1000px
   }
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 112.5em) { @content }; // 1800px
+    @media only screen and (min-width: 75em) { @content }; // 1200px
   }
 }

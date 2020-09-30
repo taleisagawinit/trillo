@@ -1,0 +1,17 @@
+.hotel {
+    
+  &__content {
+    @include responsive(laptop) {
+      display: flex;
+    }
+
+  }
+
+  @include responsive(desktop) {
+    box-shadow: 0 2rem 6rem rgba($color-black, .3);
+    max-width: 100rem;
+    margin: 8rem auto;
+    background-color: $color-white;
+  }
+
+}

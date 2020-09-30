@@ -15,24 +15,27 @@ export default function() {
       recommend={"Lucy and 3 other friends recommend this hotel"}
       users={cardUsers}
        />
-      <ReviewCard
-      quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
-      name={"Nick Smith"}
-      date={"Feb 23, 2017"}
-      rating={"7.8"}
-      img={"user-1.jpg"}
-       />
-      <ReviewCard
-      quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
-      name={"Mary Thomas"}
-      date={"Sept 13, 2017"}
-      rating={"9.3"}
-      img={"user-2.jpg"}
-       />
-      <Button
-      type={"inline"}
-      text="Show all &rarr;"
-      />
+       <div className="main__reviews">
+        <ReviewCard
+        quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
+        name={"Nick Smith"}
+        date={"Feb 23, 2017"}
+        rating={"7.8"}
+        img={"user-1.jpg"}
+        />
+        <ReviewCard
+        quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
+        name={"Mary Thomas"}
+        date={"Sept 13, 2017"}
+        rating={"9.3"}
+        img={"user-2.jpg"}
+        />
+        <Button
+        type={"inline"}
+        text="Show all &rarr;"
+        />
+       </div>
+      
     </section>
   )
 } 

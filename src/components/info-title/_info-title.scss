@@ -1,6 +1,7 @@
 .info-title {
   display: flex;
   justify-content: space-between;
+  background-color: $color-white;
 
   &__left {
     // flex-grow: 2;
@@ -8,6 +9,14 @@
 
     @include responsive(tablet-p) {
       padding: 2rem 5rem;
+    }
+
+    @include responsive(laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      padding: 1.2rem 2rem;
     }
   }
   
@@ -23,6 +32,12 @@
     font-size: 1.8rem;
     color: $color-primary;
     display: flex;
+
+    @include responsive(laptop) {
+      flex-grow: 1;
+      padding-left: 2rem;
+      font-size: 1.6rem;
+    }
   }
 
   &__star-box {
@@ -53,6 +68,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include responsive(laptop) {
+      padding: 1.2rem 1.5rem;
+    }
   }
 
   &__rating {
@@ -63,5 +82,11 @@
   &__votes {
     font-size: 1.5rem;
     font-weight: 400;
+
+    @include responsive(laptop) {
+      font-size: 1.3rem;
+    }
   }
+
+
 }

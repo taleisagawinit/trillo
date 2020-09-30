@@ -9,9 +9,9 @@ import InfoTitle from '../../components/info-title/InfoTitle';
 
 export default function(props) {
   return (
-    <div>
+    <div className="hotel">
       <Header />
-      <div>
+      <div className="hotel__content">
         <Navigation />
           <div>
             {/* make image gallery & info title 1 layout component - content-top */}

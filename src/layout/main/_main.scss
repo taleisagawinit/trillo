@@ -2,4 +2,13 @@
   background-color: $color-white;
   // background-color: $color-grey-light-2;
   // padding: 3rem;
+  
+
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-grey-light-1;
+    border: 1px solid $color-grey-light-2;
+  }
+
 }

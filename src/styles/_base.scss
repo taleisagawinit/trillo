@@ -11,7 +11,7 @@
 html {
   font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
   
-  @include responsive(tablet-l) {
+  @include responsive(desktop) {
     font-size: 68.75%; //1rem = 11px
   }
 }
@@ -20,4 +20,9 @@ body {
   box-sizing: border-box;
   color: $color-grey-dark-2;
   font-family: "Open Sans", sans-serif;
+
+  @include responsive(desktop) {
+    background-color: $color-primary;
+    // padding: 8rem 6rem;
+  }
 }

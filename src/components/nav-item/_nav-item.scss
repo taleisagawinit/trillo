@@ -1,16 +1,21 @@
 .nav-item {
-    text-transform: uppercase;
-    font-size: 1.15rem;
-    background-color: $color-grey-dark-1;
-    color: $color-white;
-    text-align: center;
-    position: relative;
-    transition: .5s;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  background-color: $color-grey-dark-1;
+  color: $color-white;
+  text-align: center;
+  position: relative;
+  transition: .5s;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // width: 100%;
+  justify-content: flex-start;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &__icon {
     font-size: 2rem;

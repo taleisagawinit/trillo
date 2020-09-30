@@ -4,9 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  background-color: $color-white;
 
   @include responsive(tablet-p) {
     padding: 3rem 5rem;
+  }
+
+  @include responsive(laptop) {
+    padding: 1rem 2rem;
   }
   
   &__logo {
@@ -15,6 +20,10 @@
     @include responsive(tablet-p) {
       flex-grow: 3;
     }
+
+    @include responsive(laptop) {
+      flex-grow: 0;
+    }
   }
 
   &__user {
@@ -22,10 +31,21 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+    @include responsive(laptop) {
+      order: 3;
+      flex-grow: 0;
+    }
   }
 
   &__search {
     width: 100%;
     margin-top: 1rem;
+
+    @include responsive(laptop) {
+      width: 50%;
+      order: 1;
+      margin: 1rem 0;
+    }
   }
 }

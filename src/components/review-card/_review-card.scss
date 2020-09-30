@@ -4,9 +4,18 @@
   padding: 4rem 2rem 3rem 2rem;
   position: relative;
   z-index: 10;
+  background-color: $color-white;
+  overflow: hidden;
 
   @include responsive(tablet-p) {
     margin: 0 5rem;
+  }
+
+  @include responsive(laptop) {
+    margin: 3rem 3rem 3rem 0;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+    font-size: 1.3rem;
+
   }
 
 
@@ -51,5 +60,10 @@
     font-family: sans-serif;
     z-index: -1;
     color: $color-grey-light-2;
+
+    @include responsive(laptop) {
+      left: -1rem;
+      top: -4rem;
+    }
   }
 }
