@@ -11,7 +11,7 @@ export default function(props) {
   if (props.type === 'gradient') {
     return (
       <button className="button button__gradient">
-        {props.text}
+        <p className="text">{props.text}</p>
       </button>
     )
   }

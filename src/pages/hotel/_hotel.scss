@@ -7,11 +7,15 @@
 
   }
 
-  @include responsive(desktop) {
+  @include responsive(laptop) {
     box-shadow: 0 2rem 6rem rgba($color-black, .3);
     max-width: 100rem;
-    margin: 8rem auto;
+    margin: 8rem;
     background-color: $color-white;
+  }
+
+  @include responsive(desktop) {
+    margin: 8rem auto;
   }
 
 }

@@ -2,17 +2,15 @@
   background-color: $color-white;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 
   &__img {
     padding: 1rem;
-    width: 33.3333%;
+    width: 100%;
 
-    @include responsive(tablet-p) {
-      padding: 2rem;
-    }
-
-    @include responsive(laptop) {
+    @include responsive(phone-l) {
       padding: 0;
+      width: 33.3333%;
     }
 
   }

@@ -40,6 +40,9 @@ Base + Typography => General Layout + Grid => Page Layout => Components
 */
 
 @mixin responsive($breakpoint) {
+  @if $breakpoint == phone-l {
+    @media only screen and (min-width: 37.5em) { @content }; // 700px
+  }
   @if $breakpoint == tablet-p {
     @media only screen and (min-width: 43.75em) { @content }; // 700px
   }

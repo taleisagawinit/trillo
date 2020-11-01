@@ -10,7 +10,7 @@ export default function() {
     <section className="main">
       <Card
       info1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id odit sequi doloremque ullam aut? Sint dolore asperiores perferendis porro. Id hic, similique dolorem enim quasi modi."}
-      info2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id"}
+      info2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero laborum excepturi id odit sequi doloremque ullam aut? Sint dolore asperiores"}
       perks={cardPerks}
       recommend={"Lucy and 3 other friends recommend this hotel"}
       users={cardUsers}

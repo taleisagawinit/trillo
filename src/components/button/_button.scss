@@ -18,14 +18,57 @@
     color: $color-white;
     text-transform: uppercase;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-    padding: 2rem 6rem;
     border-radius: 3rem;
-    font-weight: 400;
     margin: 2rem auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    
+    .text {
+      padding: 2.5rem 8rem;
+
+      @include responsive(laptop) {
+        padding: 1rem 5rem;
+      }
+
+    }
+
+    &::before, &::after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transition: .2s;
+    } 
+
+    &::before {
+      content: "book now";
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      content: "4 rooms left";
+      display: block;
+      transform: translate(-50%, 200%);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::before {
+        transform: translate(-50%, -300%);
+      }
+      &::after {
+        transform: translate(-50%, -50%);
+      }
+    }
 
     @include responsive(laptop) {
       padding: 1.5rem 6rem;
     }
+
+    
   }
 
 }

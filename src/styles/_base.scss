@@ -21,7 +21,7 @@ body {
   color: $color-grey-dark-2;
   font-family: "Open Sans", sans-serif;
 
-  @include responsive(desktop) {
+  @include responsive(laptop) {
     background-color: $color-primary;
     // padding: 8rem 6rem;
   }

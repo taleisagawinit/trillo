@@ -7,7 +7,6 @@ export default function(props) {
       <h3 className="footer__heading">{props.heading}</h3>
       <Button
       type={"gradient"}
-      text={"book now"}
       />
     </footer>
   )
